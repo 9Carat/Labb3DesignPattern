@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Labb3DesignPattern
 {
-    public enum AvailableDrink
+    internal class Coffee : IWarmDrink
     {
-        Coffee,
-        Tea,
-        Cappuccino,
-        Chocolate
+        public void Consume()
+        {
+            Console.WriteLine("Hot coffee is served!");
+        }
     }
 }
